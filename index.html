@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muskan Ali - Web Developer</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#328E6E',secondary:'#67AE6E'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Navigation -->
+<nav class="fixed top-0 left-0 w-full bg-[#E1EEBC] z-50 shadow-sm">
+<div class="container mx-auto px-6 py-4 flex justify-between items-center">
+<a href="#home" class="text-2xl font-['Pacifico'] text-primary">Muskan</a>
+<!-- Desktop Navigation -->
+<div class="hidden md:flex space-x-8">
+<a href="#home" class="nav-link active-nav text-primary font-medium">Home</a>
+<a href="#about" class="nav-link text-primary font-medium">About</a>
+<a href="#skills" class="nav-link text-primary font-medium">Skills</a>
+<a href="#projects" class="nav-link text-primary font-medium">Projects</a>
+<a href="#contact" class="nav-link text-primary font-medium">Contact</a>
+</div>
+<!-- Mobile Navigation Toggle -->
+<div class="md:hidden flex items-center">
+<button id="menu-toggle" class="text-primary w-10 h-10 flex items-center justify-center">
+<i class="ri-menu-line ri-lg"></i>
+</button>
+</div>
+</div>
+<!-- Mobile Navigation Menu -->
+<div id="mobile-menu" class="hidden md:hidden bg-[#E1EEBC] w-full">
+<div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
+<a href="#home" class="text-primary font-medium py-2">Home</a>
+<a href="#about" class="text-primary font-medium py-2">About</a>
+<a href="#skills" class="text-primary font-medium py-2">Skills</a>
+<a href="#projects" class="text-primary font-medium py-2">Projects</a>
+<a href="#contact" class="text-primary font-medium py-2">Contact</a>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section id="home" class="pt-32 pb-20 md:py-40 bg-[#E1EEBC]">
+<div class="container mx-auto px-6">
+<div class="flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 mb-12 md:mb-0">
+<h1 class="text-4xl md:text-6xl font-bold mb-4 text-primary">Muskan Ali</h1>
+<h2 class="text-xl md:text-2xl font-medium mb-6 text-secondary">Web Developer</h2>
+<p class="text-lg mb-8 max-w-lg text-primary opacity-90">
+Innovation Science and Technology student with a strong academic foundation, adept at applying theoretical knowledge to real-world challenges. Proven ability in collaborative problem-solving and a keen interest in emerging technologies.
+</p>
+<div class="flex space-x-4">
+<a href="#projects" class="bg-primary text-white px-6 py-3 !rounded-button font-medium hover:bg-opacity-90 transition whitespace-nowrap">View Projects</a>
+<a href="#contact" class="border-2 border-primary text-primary px-6 py-3 !rounded-button font-medium hover:bg-primary hover:text-white transition whitespace-nowrap">Contact Me</a>
+</div>
+</div>
+<div class="md:w-1/2">
+<div class="relative">
+<div class="w-64 h-80 mx-auto bg-[#BDDDE4] rounded-lg overflow-hidden relative">
+<div class="absolute inset-0 border-4 border-dashed border-primary animate-pulse rounded-lg"></div>
+<div class="absolute inset-0 border-4 border-[#67AE6E] animate-[spin_15s_linear_infinite] rounded-lg" style="border-style: dotted;"></div>
+<img src="mypic.jpeg" alt="Muskan Ali Portrait" class="w-full h-full object-cover object-top">
+</div>
+<div class="absolute -bottom-6 -right-6 w-24 h-24 bg-[#67AE6E] rounded-lg animate-bounce"></div>
+<div class="absolute -top-6 -left-6 w-16 h-16 bg-primary rounded-lg animate-pulse"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section id="about" class="py-20 bg-white">
+<div class="container mx-auto px-6">
+<h2 class="section-title text-3xl font-bold text-primary">About Me</h2>
+<div class="flex flex-col md:flex-row mt-12">
+<div class="md:w-1/2 mb-8 md:mb-0 pr-0 md:pr-8">
+<h3 class="text-xl font-semibold mb-4 text-primary">Profile</h3>
+<p class="mb-6 text-primary opacity-90">
+I am a dedicated web developer with a strong foundation in Information Science and Technology.
+My passion lies in creating clean, efficient, and user-friendly web applications that solve real-world problems.
+I enjoy working collaboratively and am constantly exploring emerging technologies to enhance my skill set.
+</p>
+<h3 class="text-xl font-semibold mb-4 text-primary">Education</h3>
+<div class="space-y-4">
+<div class="border-l-2 border-[#90C67C] pl-4">
+<h4 class="font-medium text-primary">Presidency University, B.Tech (Information Science And Technology)</h4>
+<p class="text-sm text-primary opacity-80">Bangalore, India</p>
+<p class="text-sm text-primary opacity-80">CGPA - 7.00</p>
+</div>
+<div class="border-l-2 border-[#90C67C] pl-4">
+<h4 class="font-medium text-primary">Indo Asian Girls PU College, XII Intermediate</h4>
+<p class="text-sm text-primary opacity-80">Bangalore, India</p>
+<p class="text-sm text-primary opacity-80">PERCENTAGE - 61.16%</p>
+</div>
+<div class="border-l-2 border-[#90C67C] pl-4">
+<h4 class="font-medium text-primary">Pine Hall English High School, X STD</h4>
+<p class="text-sm text-primary opacity-80">Bangalore, India</p>
+<p class="text-sm text-primary opacity-80">PERCENTAGE - 75.20%</p>
+</div>
+</div>
+</div>
+<div class="md:w-1/2">
+<h3 class="text-xl font-semibold mb-4 text-primary">Languages</h3>
+<div class="grid grid-cols-2 gap-4 mb-8">
+<div class="bg-[#E1EEBC] p-4 rounded">
+<p class="font-medium text-primary">English</p>
+</div>
+<div class="bg-[#E1EEBC] p-4 rounded">
+<p class="font-medium text-primary">Hindi</p>
+</div>
+<div class="bg-[#E1EEBC] p-4 rounded">
+<p class="font-medium text-primary">Kannada</p>
+</div>
+<div class="bg-[#E1EEBC] p-4 rounded">
+<p class="font-medium text-primary">Urdu</p>
+</div>
+</div>
+<h3 class="text-xl font-semibold mb-4 text-primary">Courses</h3>
+<div class="space-y-3">
+<div class="bg-[#E1EEBC] p-4 rounded">
+<p class="font-medium text-primary">SQL Basics, GREAT 
+    LEARNING</p>
+</div>
+<div class="bg-[#E1EEBC] p-4 rounded">
+<p class="font-medium text-primary">CSS, Hacker Rank</p>
+</div>
+<div class="bg-[#E1EEBC] p-4 rounded">
+<p class="font-medium text-primary">Network Security, Great Learning</p>
+</div>
+<div class="bg-[#E1EEBC] p-4 rounded">
+<p class="font-medium text-primary">Front End Development - HTML, GREAT LEARNING</p>
+</div>
+</div>
+<h3 class="text-xl font-semibold mt-8 mb-4 text-primary">Interests</h3>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex items-center space-x-2">
+<div class="w-8 h-8 flex items-center justify-center bg-[#BDDDE4] rounded-full">
+<i class="ri-book-open-line text-white"></i>
+</div>
+<span class="text-primary">Reading</span>
+</div>
+<div class="flex items-center space-x-2">
+<div class="w-8 h-8 flex items-center justify-center bg-[#BDDDE4] rounded-full">
+<i class="ri-restaurant-line text-white"></i>
+</div>
+<span class="text-primary">Badminton</span>
+</div>
+<div class="flex items-center space-x-2">
+<div class="w-8 h-8 flex items-center justify-center bg-[#BDDDE4] rounded-full">
+<i class="ri-paint-brush-line text-white"></i>
+</div>
+<span class="text-primary">Designing</span>
+</div>
+<div class="flex items-center space-x-2">
+<div class="w-8 h-8 flex items-center justify-center bg-[#BDDDE4] rounded-full">
+<i class="ri-pencil-ruler-2-line text-white"></i>
+</div>
+<span class="text-primary">Sketching</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills Section -->
+<section id="skills" class="py-20 bg-[#E1EEBC]">
+<div class="container mx-auto px-6">
+<h2 class="section-title text-3xl font-bold text-primary">Skills</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+<div class="bg-white p-6 rounded-lg shadow-md">
+<div class="flex items-center mb-4">
+<div class="w-10 h-10 flex items-center justify-center bg-[#67AE6E] rounded-full mr-3">
+<i class="ri-html5-line text-white"></i>
+</div>
+<h3 class="text-lg font-semibold text-primary">HTML</h3>
+</div>
+<div class="skill-bar">
+<div class="skill-progress" style="width: 95%"></div>
+</div>
+<p class="mt-3 text-sm text-primary opacity-80">
+Advanced knowledge of HTML5 semantics, forms, and best practices for accessibility and SEO.
+</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md">
+<div class="flex items-center mb-4">
+<div class="w-10 h-10 flex items-center justify-center bg-[#67AE6E] rounded-full mr-3">
+<i class="ri-css3-line text-white"></i>
+</div>
+<h3 class="text-lg font-semibold text-primary">CSS</h3>
+</div>
+<div class="skill-bar">
+<div class="skill-progress" style="width: 90%"></div>
+</div>
+<p class="mt-3 text-sm text-primary opacity-80">
+Proficient in CSS3, Flexbox, Grid, animations, and responsive design principles.
+</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md">
+<div class="flex items-center mb-4">
+<div class="w-10 h-10 flex items-center justify-center bg-[#67AE6E] rounded-full mr-3">
+<i class="ri-javascript-line text-white"></i>
+</div>
+<h3 class="text-lg font-semibold text-primary">JavaScript</h3>
+</div>
+<div class="skill-bar">
+<div class="skill-progress" style="width: 85%"></div>
+</div>
+<p class="mt-3 text-sm text-primary opacity-80">
+Strong understanding of modern JavaScript, ES6+, DOM manipulation, and event handling.
+</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md">
+<div class="flex items-center mb-4">
+<div class="w-10 h-10 flex items-center justify-center bg-[#67AE6E] rounded-full mr-3">
+<i class="ri-database-2-line text-white"></i>
+</div>
+<h3 class="text-lg font-semibold text-primary">MySQL</h3>
+</div>
+<div class="skill-bar">
+<div class="skill-progress" style="width: 80%"></div>
+</div>
+<p class="mt-3 text-sm text-primary opacity-80">
+Experience with database design, SQL queries, and database management systems.
+</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md">
+<div class="flex items-center mb-4">
+<div class="w-10 h-10 flex items-center justify-center bg-[#67AE6E] rounded-full mr-3">
+<i class="ri-python-line text-white"></i>
+</div>
+<h3 class="text-lg font-semibold text-primary">Python</h3>
+</div>
+<div class="skill-bar">
+<div class="skill-progress" style="width: 75%"></div>
+</div>
+<p class="mt-3 text-sm text-primary opacity-80">
+Knowledge of Python programming for web development and data analysis.
+</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md">
+<div class="flex items-center mb-4">
+<div class="w-10 h-10 flex items-center justify-center bg-[#67AE6E] rounded-full mr-3">
+<i class="ri-responsive-line text-white"></i>
+</div>
+<h3 class="text-lg font-semibold text-primary">Responsive Design</h3>
+</div>
+<div class="skill-bar">
+<div class="skill-progress" style="width: 90%"></div>
+</div>
+<p class="mt-3 text-sm text-primary opacity-80">
+Creating websites that work seamlessly across all devices and screen sizes.
+</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section id="projects" class="py-20 bg-white">
+<div class="container mx-auto px-6">
+<h2 class="section-title text-3xl font-bold text-primary">Projects</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+<div class="project-card bg-[#E1EEBC] rounded-lg overflow-hidden">
+<div class="h-48 overflow-hidden">
+<img src="https://public.readdy.ai/ai/img_res/052ddff1f46d9081adf18674db305ace.jpg" alt="Shop Stop Project" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-semibold mb-2 text-primary">SHOP STOP</h3>
+<p class="text-sm text-primary opacity-80 mb-4">
+Developed a dynamic shopping website using HTML, CSS, and JavaScript with a user-friendly, responsive design for seamless performance on all devices.
+</p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="text-xs bg-[#90C67C] text-primary px-2 py-1 rounded-full">HTML</span>
+<span class="text-xs bg-[#90C67C] text-primary px-2 py-1 rounded-full">CSS</span>
+<span class="text-xs bg-[#90C67C] text-primary px-2 py-1 rounded-full">JavaScript</span>
+<span class="text-xs bg-[#90C67C] text-primary px-2 py-1 rounded-full">Responsive</span>
+</div>
+<a href="#" class="inline-block bg-primary text-white px-4 py-2 !rounded-button text-sm font-medium hover:bg-opacity-90 transition whitespace-nowrap">View Project</a>
+</div>
+</div>
+<div class="project-card bg-[#E1EEBC] rounded-lg overflow-hidden">
+<div class="h-48 overflow-hidden">
+<img src="https://public.readdy.ai/ai/img_res/309133e114a29947ebb9d8e789382102.jpg" alt="Government Asset Management App" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-semibold mb-2 text-primary">Government Asset Management App</h3>
+<p class="text-sm text-primary opacity-80 mb-4">
+Developed a web-based Government Asset Management app with user/admin modes, asset tracking, notifications, and security, optimized for Raspberry Pi.
+</p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="text-xs bg-[#90C67C] text-primary px-2 py-1 rounded-full">Raspberry Pi</span>
+<span class="text-xs bg-[#90C67C] text-primary px-2 py-1 rounded-full">Web App</span>
+<span class="text-xs bg-[#90C67C] text-primary px-2 py-1 rounded-full">Security</span>
+<span class="text-xs bg-[#90C67C] text-primary px-2 py-1 rounded-full">Tracking</span>
+</div>
+<a href="#" class="inline-block bg-primary text-white px-4 py-2 !rounded-button text-sm font-medium hover:bg-opacity-90 transition whitespace-nowrap">View Project</a>
+</div>
+</div>
+<div class="project-card bg-[#E1EEBC] rounded-lg overflow-hidden">
+<div class="h-48 overflow-hidden">
+<img src="https://public.readdy.ai/ai/img_res/ec080b4a7eb2f4d4ff2855e838f91c42.jpg" alt="Smart Watch for Elderly" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-semibold mb-2 text-primary">Smart Watch for Elderly</h3>
+<p class="text-sm text-primary opacity-80 mb-4">
+Developed an energy-efficient Arduino Nano heart monitor for elderly, enabling real-time tracking and caregiver data logging.
+</p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="text-xs bg-[#90C67C] text-primary px-2 py-1 rounded-full">Arduino</span>
+<span class="text-xs bg-[#90C67C] text-primary px-2 py-1 rounded-full">IoT</span>
+<span class="text-xs bg-[#90C67C] text-primary px-2 py-1 rounded-full">Healthcare</span>
+<span class="text-xs bg-[#90C67C] text-primary px-2 py-1 rounded-full">Monitoring</span>
+</div>
+<a href="#" class="inline-block bg-primary text-white px-4 py-2 !rounded-button text-sm font-medium hover:bg-opacity-90 transition whitespace-nowrap">View Project</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Extra Curricular Activities Section -->
+<section class="py-20 bg-[#E1EEBC]">
+<div class="container mx-auto px-6">
+<h2 class="section-title text-3xl font-bold text-primary">Extra Curricular Activities</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+<div class="bg-white p-6 rounded-lg shadow-md">
+<div class="flex items-center mb-4">
+<div class="w-12 h-12 flex items-center justify-center bg-[#67AE6E] rounded-full mr-4">
+<i class="ri-rocket-line text-white ri-lg"></i>
+</div>
+<h3 class="text-xl font-semibold text-primary">Startup Carnival</h3>
+</div>
+<p class="text-primary opacity-90">
+Volunteered at Presidency University LaunchPad Startup carnival, helping organize and facilitate innovation showcases and networking events.
+</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md">
+<div class="flex items-center mb-4">
+<div class="w-12 h-12 flex items-center justify-center bg-[#67AE6E] rounded-full mr-4">
+<i class="ri-team-line text-white ri-lg"></i>
+</div>
+<h3 class="text-xl font-semibold text-primary">Anveshana</h3>
+</div>
+<p class="text-primary opacity-90">
+Participated in Anveshana, showcasing innovative projects and collaborating with peers to develop creative solutions to real-world problems.
+</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md">
+<div class="flex items-center mb-4">
+<div class="w-12 h-12 flex items-center justify-center bg-[#67AE6E] rounded-full mr-4">
+<i class="ri-ai-line text-white ri-lg"></i>
+</div>
+<h3 class="text-xl font-semibold text-primary">AI Reference Meetup</h3>
+</div>
+<p class="text-primary opacity-90">
+Participated in AI reference meetup with NVIDIA, exploring cutting-edge AI technologies and networking with industry professionals in the field of artificial intelligence.
+</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-white">
+<div class="container mx-auto px-6">
+<h2 class="section-title text-3xl font-bold text-primary">Contact Me</h2>
+<div class="flex flex-col md:flex-row gap-12 mt-12">
+<div class="md:w-1/2">
+<form class="space-y-6">
+<div>
+<label for="name" class="block text-sm font-medium text-primary mb-2">Your Name</label>
+<input type="text" id="name" class="w-full p-3 contact-input rounded" placeholder="John Doe">
+</div>
+<div>
+<label for="email" class="block text-sm font-medium text-primary mb-2">Your Email</label>
+<input type="email" id="email" class="w-full p-3 contact-input rounded" placeholder="john@example.com">
+</div>
+<div>
+<label for="message" class="block text-sm font-medium text-primary mb-2">Your Message</label>
+<textarea id="message" rows="5" class="w-full p-3 contact-input rounded" placeholder="How can I help you?"></textarea>
+</div>
+<button type="submit" class="bg-primary text-white px-6 py-3 !rounded-button font-medium hover:bg-opacity-90 transition whitespace-nowrap">Send Message</button>
+</form>
+</div>
+<div class="md:w-1/2">
+<div class="bg-[#E1EEBC] p-6 rounded-lg h-full">
+<h3 class="text-xl font-semibold mb-6 text-primary">Contact Information</h3>
+<div class="space-y-6">
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-[#90C67C] rounded-full mr-4 mt-1">
+<i class="ri-mail-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-medium text-primary">Email</h4>
+<p class="text-primary opacity-80">muskanali317@gmail.com</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-[#90C67C] rounded-full mr-4 mt-1">
+<i class="ri-phone-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-medium text-primary">Phone</h4>
+<p class="text-primary opacity-80">1234567891</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-[#90C67C] rounded-full mr-4 mt-1">
+<i class="ri-map-pin-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-medium text-primary">Location</h4>
+<p class="text-primary opacity-80">#100, Thanisandra main road sarjapalya, Bangalore-560077</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-[#90C67C] rounded-full mr-4 mt-1">
+<i class="ri-linkedin-box-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-medium text-primary">LinkedIn</h4>
+<a href="https://www.linkedin.com/in/muskan-ali-webdeveloper" class="text-primary opacity-80 hover:opacity-100">www.linkedin.com/in/muskan-ali-webdeveloper</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="py-8 bg-primary text-white">
+<div class="container mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<div class="mb-4 md:mb-0">
+<a href="#home" class="text-2xl font-['Pacifico'] text-white">Muskan</a>
+</div>
+<div class="flex space-x-6">
+<a href="#" class="text-white hover:text-[#90C67C] transition">
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-github-line"></i>
+</div>
+</a>
+<a href="#" class="text-white hover:text-[#90C67C] transition">
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-linkedin-line"></i>
+</div>
+</a>
+<a href="#" class="text-white hover:text-[#90C67C] transition">
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-twitter-x-line"></i>
+</div>
+</a>
+<a href="#" class="text-white hover:text-[#90C67C] transition">
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-instagram-line"></i>
+</div>
+</a>
+</div>
+</div>
+<div class="border-t border-white border-opacity-20 mt-6 pt-6 text-center text-sm text-white text-opacity-70">
+<p>&copy; 2025 Muskan Ali. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<!-- Back to Top Button -->
+<button id="back-to-top" class="fixed bottom-6 right-6 bg-primary text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300">
+<i class="ri-arrow-up-line ri-lg"></i>
+</button>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
